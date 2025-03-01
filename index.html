@@ -5,29 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maiden Fantasy 공략</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- 배경 -->
+    <div class="background"></div>
+
+    <!-- 헤더 -->
     <header>
-        <h1>🎮 Maiden Fantasy 공략 사이트</h1>
+        <h1>Maiden Fantasy 공략 사이트</h1>
         <nav>
             <ul>
-                <li><a href="team.html">⚔️ 팀 구성</a></li>
-                <li><a href="sigil.html">🌀 각인 & 특성석</a></li>
-                <li><a href="fishing.html">🎣 낚시 시스템</a></li>
-                <li><a href="updates.html">📢 최신 업데이트</a></li>
+                <li><a href="#" onclick="showTab('home')">🏠 홈</a></li>
+                <li><a href="#" onclick="showTab('team')">⚔️ 팀 구성</a></li>
+                <li><a href="#" onclick="showTab('sigil')">🌀 각인 & 특성석</a></li>
+                <li><a href="#" onclick="showTab('fishing')">🎣 낚시 시스템</a></li>
+                <li><a href="#" onclick="showTab('updates')">📢 최신 업데이트</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- 콘텐츠 -->
     <main>
-        <section class="intro">
-            <h2>무과금(F2P) 유저도 최적의 성장 방법!</h2>
-            <p>이 사이트에서는 팀 구성, 캐릭터 가이드, 각인 및 특성석 공략, 낚시 시스템 가이드를 제공합니다.</p>
+        <section id="home" class="tab active">
+            <h2>환영합니다! 🎮</h2>
+            <p>이 사이트는 Maiden Fantasy 공략을 공유하기 위한 공간입니다.</p>
+            <p>무과금(F2P) 유저를 위한 최적의 성장 가이드!</p>
+        </section>
+
+        <section id="team" class="tab">
+            <h2>⚔️ 팀 구성 및 성장 전략</h2>
+            <p>최적의 6~13성 팀 구성법을 소개합니다.</p>
+            <table>
+                <tr>
+                    <th>역할</th>
+                    <th>추천 영웅</th>
+                </tr>
+                <tr>
+                    <td>힐러</td>
+                    <td>Eula, Liya</td>
+                </tr>
+                <tr>
+                    <td>탱커</td>
+                    <td>Harriet, Frien</td>
+                </tr>
+                <tr>
+                    <td>딜러</td>
+                    <td>Mei, Tina, Selei</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="sigil" class="tab">
+            <h2>🌀 각인 & 특성석 공략</h2>
+            <p>각인 레벨 진행 순서: 초록 → 파랑 → 보라 → 용 → 신성 → 성좌 → 월식 → 태양</p>
+            <p><b>주의! 🚨</b> 용(Dragon) 각인을 재조합하지 마세요!</p>
+        </section>
+
+        <section id="fishing" class="tab">
+            <h2>🎣 낚시 시스템 공략</h2>
+            <p>천사(Angels)의 능력치를 강화하는 중요한 시스템입니다.</p>
+            <ul>
+                <li>✅ 낚시 가능 요일: 월, 수, 금</li>
+                <li>✅ 자동 낚시: 100회 낚시 후 해금</li>
+                <li>✅ 빠른 낚시: 기사 레벨 80 이후 가능</li>
+            </ul>
+        </section>
+
+        <section id="updates" class="tab">
+            <h2>📢 최신 업데이트</h2>
+            <p>게임 내 이벤트 및 패치 노트를 확인하세요.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Maiden Fantasy 공략 사이트</p>
+        <p>&copy; 2025 Maiden Fantasy 공략</p>
     </footer>
+
 </body>
 </html>
